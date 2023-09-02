@@ -27,6 +27,7 @@
     body {
       font-family: 'IBM Plex Sans', sans-serif;
       height: 100vh;
+      overflow-x: hidden;
     }
 
     .title {
@@ -174,7 +175,11 @@
       margin-left: 55%;
     }
 
-  
+    @media (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    }
+  }
   </style>
 
 </head>
