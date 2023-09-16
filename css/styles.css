@@ -106,8 +106,8 @@ body {
 
 .section-center {
     background-image: url(/images/car-img.jpg);
-    background-size: 1270px 560px  ;
-    
+    background-size: 1270px 560px;
+
 
 }
 
@@ -136,7 +136,7 @@ body {
     margin: auto;
     padding: 40px;
     overflow: hidden;
-    
+
     background-size: cover;
     border-radius: 5px;
     z-index: 20
@@ -173,12 +173,11 @@ body {
 }
 
 .booking-form .form-control {
-    
+
     height: 60px;
     padding: 0px 25px;
     border: none;
     border-radius: 40px;
-    
     -webkit-box-shadow: 0px 0px 0px 2px transparent;
     box-shadow: 0px 0px 0px 2px transparent;
     -webkit-transition: 0.2s;
@@ -277,7 +276,7 @@ body {
 }
 
 .booking-form .submit-btn {
-    
+
     background-color: #e35e0a;
     font-weight: 700;
     height: 60px;
@@ -297,8 +296,7 @@ body {
     opacity: 0.9
 }
 
-.process
-{
+.process {
     margin-top: 5%;
 }
 
@@ -308,16 +306,16 @@ body {
 
 .divider:after,
 .divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
 }
 
 
 /* signup form css */
 
-.form-outline{
+.form-outline {
 
-  margin-top: 20px;
+    margin-top: 20px;
 }
