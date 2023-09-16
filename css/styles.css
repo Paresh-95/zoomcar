@@ -136,7 +136,7 @@ body {
     margin: auto;
     padding: 40px;
     overflow: hidden;
-    background-image: url(/images/car-img.jpg);
+    
     background-size: cover;
     border-radius: 5px;
     z-index: 20
