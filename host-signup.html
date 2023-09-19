@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title> Host Sign Up Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -12,45 +12,57 @@
 <body>
      <!-- Navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
-      <a class="navbar-brand" href="./index.html">
-          <img src="./images/logo.png" alt="" height="50">
-          <img src="./images/logo1.png" alt="" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-              <li class="nav-item active">
-                  <a href="" class="nav-link" style="font-size: large;">
-                      <button class="btn btn-light rounded-pill px-2" type="button">
-                          <img class="button-logo" height="20" src="./images/button_logo.png" alt="">Become a Host
-                      </button>
-                  </a>
-              </li>
-              <li class="nav-item active">
-                  <a href="" class="nav-link">
-                      <button class="btn btn-light rounded-pill px-2" type="button">
-                          <img class="button-logo" height="20" src="./images/button_logo.png" alt="">  Login/Signup
-                      </button>
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-  
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.png" alt="" height="50">
+            <img src="./images/logo1.png" alt="" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="" class="nav-link" style="font-size: large;">
+                        <button class="btn btn-light rounded-pill px-2" type="button">
+                            <img class="button-logo" height="20" src="./images/button_logo.png" alt="">Become a Host
+                        </button>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="" class="nav-link">
+                        <button class="btn btn-light rounded-pill px-2" type="button">
+                            <img class="button-logo" height="20" src="./images/button_logo.png" alt="">  Login/Signup
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
     <section>
-        <section class="vh-100">
+        <section >
             <div class="container py-5 h-100">
               <div class="row d-flex align-items-center justify-content-center h-100">
                 <div class="col-md-8 col-lg-7 col-xl-6">
-                  <img src="./images/login page img.svg" height="1500" width="1100" style="border-radius: 40px;"
+                  <img src="./images/signup page.svg" height="12000" width="9000"  style="border-radius: 40px;"
                     class="img-fluid" alt="Phone image">
                 </div>
                 <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                  <h1>Login - </h1>
+                    <h1>Host Sign in - </h1>
                   <form>
+                    <!-- first name -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form1Example13">Full Name</label>
+                        <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                    
+                    <!-- last name -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form1Example13">Mobile Number</label>
+                        <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                       
+                       
+
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form1Example13">Email address</label>
@@ -65,18 +77,11 @@
                      
                     </div>
           
-                    <div class="d-flex justify-content-around align-items-center mb-4">
-                      <!-- Checkbox -->
-                      <div class="form-check">
-
-                      </div>
-                      <a href="#!">Forgot password?</a>
-
-                    </div>
+                    
           
                     <!-- Submit button -->
-                    <button type="submit" style="margin-right: 130px;"  class="btn btn-primary btn-lg btn-block">Sign in</button>
-                    <button type="submit"   class="btn btn-primary btn-lg btn-block"><a style="color: white; text-decoration: none;" href="./signup.html">Create Account here</a></button>
+                    <button type="submit" style="margin-right: 130px;" class="btn btn-primary btn-lg btn-block">Sign up</button>
+                    <button type="submit"   class="btn btn-primary btn-lg btn-block"><a style="color: white; text-decoration: none;" href="./login.html">Login in</a></button>
                   </form>
                 </div>
               </div>
@@ -87,7 +92,7 @@
  <!-- Footer -->
  <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
+    <div class="container p-4 pb-0">    
         <!-- Section: Social media -->
         <section class="mb-4">
 

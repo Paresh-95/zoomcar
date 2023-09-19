@@ -1,4 +1,9 @@
 /* index1 page */
+html,
+body {
+    overflow-x: hidden;
+}
+
 #title {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -32,6 +37,8 @@
 .collapse {
     margin-left: 55%;
 }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
@@ -105,7 +112,7 @@ body {
 }
 
 .section-center {
-    background-image: url(/images/car-img.jpg);
+    background-image: url(/zoomcar/images/car-img.jpg);
     background-size: 1270px 560px;
 
 
@@ -136,7 +143,7 @@ body {
     margin: auto;
     padding: 40px;
     overflow: hidden;
-
+    background-image: url(/images/car-img.jpg);
     background-size: cover;
     border-radius: 5px;
     z-index: 20
@@ -184,22 +191,6 @@ body {
     transition: 0.2s
 }
 
-.booking-form .form-control::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5)
-}
-
-.booking-form .form-control:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.5)
-}
-
-.booking-form .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.5)
-}
-
-.booking-form .form-control:focus {
-    -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
-    box-shadow: 0px 0px 0px 2px #ff8846
-}
 
 .booking-form input[type="date"].form-control {
     padding-top: 16px
@@ -214,14 +205,15 @@ body {
     top: 10px
 }
 
+.booking-form input[type="text"].form-control+.form-label {
+    opacity: 1;
+    top: 7px
+}
+
 .booking-form select.form-control {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
-}
-
-.booking-form select.form-control:invalid {
-    color: rgba(255, 255, 255, 0.5)
 }
 
 .booking-form select.form-control+.select-arrow {
@@ -275,6 +267,12 @@ body {
     top: 10px
 }
 
+.booking-form .form-group.input-not-empty .form-label {
+    opacity: 1;
+    top: 10px
+}
+
+
 .booking-form .submit-btn {
 
     background-color: #e35e0a;
@@ -318,4 +316,113 @@ body {
 .form-outline {
 
     margin-top: 20px;
+}
+
+.card-arrange {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 8%;
+}
+
+.process {
+    height: 0%;
+    width: 100%;
+}
+
+.car-cards {
+    display: flex;
+}
+
+.card-index1 {
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* host dashboard */
+
+
+.sidebar {
+    margin-top: 6%;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
 }
